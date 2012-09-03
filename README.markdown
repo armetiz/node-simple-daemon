@@ -8,7 +8,9 @@ Fork
 
 Forked from: https://github.com/frodwith/node-init
 
-Add synchronous method & fix logging problem.
+Add synchronous method & fix a logging problem.
+
+As documentation for [daemon.node](https://github.com/indexzero/daemon.node) says : As of v0.6, node.js has not been fork-safe. What this means for you is that **all daemonization should happen on the first tick and not as part of an asynchronous action**.
 
 For the impatient
 -----------------
