@@ -9,7 +9,7 @@
    "version" : "0.1.4",
    "licences" : [
       {
-         "url" : "http://www.opensource.org/licenses/mit-license",
+         "url" : "http://github.com/armetiz/node-freebox-sdk/raw/master/LICENSE",
          "type" : "MIT License"
       }
    ],
