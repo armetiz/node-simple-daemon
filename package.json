@@ -3,16 +3,10 @@
       "node" : ">=0.4.7"
    },
    "repository" : {
-      "url" : "git://github.com/frodwith/node-init.git",
+      "url" : "git@github.com:armetiz/node-simple-daemon.git",
       "type" : "git"
    },
-   "maintainers" : [
-      {
-         "email" : "frodwith@gmail.com",
-         "name" : "Paul Driver"
-      }
-   ],
-   "version" : "0.1.2",
+   "version" : "0.1.3",
    "licences" : [
       {
          "url" : "http://www.opensource.org/licenses/mit-license",
@@ -23,7 +17,7 @@
       "daemon" : ">=0.3.0"
    },
    "name" : "init",
-   "bugs" : "https://github.com/frodwith/node-init/issues",
+   "bugs" : "https://github.com/armetiz/node-simple-daemon/issues",
    "author" : "Paul Driver <frodwith@gmail.com>",
    "description" : "Turn your node daemon into an LSB-like init script",
    "main" : "./init.js",
@@ -33,11 +27,16 @@
       "service",
       "LSB"
    ],
-   "devDependencies" : {},
    "contributors" : [
       {
-         "email" : "frodwith@gmail.com",
-         "name" : "Paul Driver"
+         "email" : "thomas@tourlourat.com",
+         "name" : "Thomas Tourlourat"
       }
-   ]
+   ],
+   "maintainers" : [
+      {
+         "email" : "thomas@tourlourat.com",
+         "name" : "Thomas Tourlourat"
+      }
+   ],
 }

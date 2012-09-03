@@ -3,6 +3,13 @@ Init
 
 Turn your node daemon into an LSB-compatible init script.
 
+Fork
+----
+
+Forked from: https://github.com/frodwith/node-init
+
+Add synchronous method & fix logging problem.
+
 For the impatient
 -----------------
 
