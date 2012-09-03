@@ -46,7 +46,6 @@ exports.start = ({ pidfile, logfile, run, success, failure }) ->
 
     start = (err) ->
         return failure(err) if err
-        return failure(err) if err
         success()
         pid = daemon.start(logfile)
         daemon.lock(pidfile)
