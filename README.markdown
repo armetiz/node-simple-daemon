@@ -12,8 +12,24 @@ Add synchronous method & fix a logging problem.
 
 As documentation for [daemon.node](https://github.com/indexzero/daemon.node) says : As of v0.6, node.js has not been fork-safe. What this means for you is that **all daemonization should happen on the first tick and not as part of an asynchronous action**.
 
-For the impatient
------------------
+If you have any problem using the run property, use runSync instead.
+
+For the impatient (sync version)
+---------------------------------
+
+    init = require('init');
+
+    init.simple({
+        pidfile : '/var/run/myprog.pid',
+        logfile : '/var/log/myprog.log',
+        command : process.argv[3],
+        runSync : function () {
+            doWhateverMyDaemonDoes();
+        }
+    })
+
+For the impatient (async version)
+---------------------------------
 
     init = require('init');
 
@@ -33,6 +49,38 @@ methods below for more flexible ways to use this module.
 
 API
 ---
+
+### init.startSync(options)
+
+Starts your service. This function will not return, and takes the following
+keyword arguments:
+
+#### pidfile
+
+Required. This should be a path to a file to lock and store the daemon pid in.
+If the daemon is already running according to this pidfile, start succeeds
+without doing anything.
+
+#### logfile
+
+Path to a file to redirect your daemon's stdout and stderr to. Defaults to
+/dev/null.
+
+#### runSync
+
+Required. A function to be called after daemon setup is complete. Do your
+daemon work here.
+
+#### success (pid, wasRunning)
+
+A function to be called when the start action succeeded (already running or
+about to daemonize). 'pid' will be the id of the running process, and
+'wasRunning' is true if the process was already running.
+
+#### failure(error)
+
+A function to be called if the start action cannot be performed. Error will be
+some sort of stringifiable error object. Defaults to init.startFailed.
 
 ### init.start(options)
 
