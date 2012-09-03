@@ -16,9 +16,9 @@
    "dependencies" : {
       "daemon" : ">=0.3.0"
    },
-   "name" : "init",
+   "name" : "simple-daemon",
    "bugs" : "https://github.com/armetiz/node-simple-daemon/issues",
-   "author" : "Paul Driver <frodwith@gmail.com>",
+   "author" : "Thomas Tourlourat <thomas@tourlourat.com>",
    "description" : "Turn your node daemon into an LSB-like init script",
    "main" : "./init.js",
    "keywords" : [
