@@ -6,7 +6,7 @@
       "url" : "git@github.com:armetiz/node-simple-daemon.git",
       "type" : "git"
    },
-   "version" : "0.1.6",
+   "version" : "0.1.7",
    "licences" : [
       {
          "url" : "http://github.com/armetiz/node-freebox-sdk/raw/master/LICENSE",
