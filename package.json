@@ -14,7 +14,7 @@
       }
    ],
    "dependencies" : {
-      "daemon" : ">=0.3.0"
+      "daemon" : "<=0.5.1"
    },
    "name" : "simple-daemon",
    "bugs" : "https://github.com/armetiz/node-simple-daemon/issues",

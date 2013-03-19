@@ -17,7 +17,7 @@ If you have any problem using the run property, use runSync instead.
 For the impatient (sync version)
 ---------------------------------
 
-    init = require('init');
+    init = require('simple-daemon');
 
     init.simple({
         pidfile : '/var/run/myprog.pid',
@@ -26,12 +26,12 @@ For the impatient (sync version)
         runSync : function () {
             doWhateverMyDaemonDoes();
         }
-    })
+    });
 
 For the impatient (async version)
 ---------------------------------
 
-    init = require('init');
+    init = require('simple-daemon');
 
     init.simple({
         pidfile : '/var/run/myprog.pid',
@@ -40,7 +40,7 @@ For the impatient (async version)
         run     : function () {
             doWhateverMyDaemonDoes();
         }
-    })
+    });
 
 init.simple() doesn't do what I want
 ------------------------------------
